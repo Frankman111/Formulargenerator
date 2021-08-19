@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content=""> 
+    <link rel="stylesheet" href="style.css">
+    
+    <title></title>
+</head>
+<body>
+    <form>
+        <h2>Bitte wählen Sie ein Geschlecht aus.</h2>
+        <div>  
+            <!-- selection for the gendertitle -->
+            <input id="myRadioButton1" type="radio" name="radiobutton" value="radiobutton">Mann
+            <input id="myRadioButton2" type="radio" name="radiobutton" value="radiobutton">Frau
+            <input id="myRadioButton3" type="radio" name="radiobutton" value="radiobutton">Divers
+        </div>
+       <div>
+            <!-- nameinput -->   
+        <label for="name">Name</label>
+            <input type="text" name="name" id="inputName">
+       </div>
+       <div>
+           <!-- state of knowledge -->
+        <input id="lowKnow" type="radio" name="radio2" value="lowKnow">kein Vorwissen
+        <input id="medKnow" type="radio" name="radio2" value="medKnow">wenig Vorwissen
+        <input id="highKnow" type="radio" name="radio2" value="highKnow">viel Vorwissen
+        </div>
+        <div>
+        <!-- courseprogress and evaluation-->
+        <ul>
+            <li><input id="positiveCoding" type="radio" name="radio3" value="positiveCoding">Positiv Coding oder NW</li>
+            <li><input id="positiveCodingWait" type="radio" name="radio3" value="positiveCodingWait">Positiv Coding oder NW Wartezeit</li>
+            <li><input id="onholdHealth" type="radio" name="radio3" value="onholdHealth">Onhold Gesundheit</li>
+            <li><input id="negativeWork" type="radio" name="radio3" value="negativeWork">freiwillig Arbeitsaufnahme</li>
+            <li><input id="negativeSelf" type="radio" name="radio3" value="negativeSelf">freiwillig Ausstieg</li>
+            <li><input id="negativeLang" type="radio" name="radio3" value="negativeLang">negativ Sprache</li>
+            <li><input id="negativeImpl" type="radio" name="radio3" value="negativeImpl">negativ Stiftung</li>
+            <li><input id="negative" type="radio" name="radio3" value="negative">negativ </li>
+        </ul>
+        </div>
+
+
+
+        <input id="submit" type="button" value="allchecked" onClick="buttonClick(); ">
+        
+    </form>
+
+    <script src="main.js" ></script>
+</body>
+</html>
